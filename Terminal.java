@@ -18,7 +18,7 @@ public class Terminal {
         System.out.println("\n " + aluno.getName() + " chegou ao ponto de onibus");
     }
 
-    public synchronized void iniciarEmbarque(Onibus onibus) {
+    public void iniciarEmbarque(Onibus onibus) {
         passageirosEmbarcados = 0;
 
         System.out.println("\n Bus Feevale chegou ao ponto");
@@ -38,7 +38,5 @@ public class Terminal {
 
         embarqueIniciado = false;
         System.out.println("\n Embarque finalizado com " + passageirosEmbarcados + " passageiros. Bus Feevale partindo");
-
-        notifyAll(); 
     }
 }
