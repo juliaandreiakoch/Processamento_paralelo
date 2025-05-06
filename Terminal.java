@@ -18,7 +18,7 @@ public class Terminal {
         System.out.println("\n " + aluno.getName() + " chegou ao ponto de onibus");
     }
 
-    public void iniciarEmbarque(Onibus onibus) {
+    public synchronized void iniciarEmbarque(Onibus onibus) {
         passageirosEmbarcados = 0;
 
         System.out.println("\n Bus Feevale chegou ao ponto");
